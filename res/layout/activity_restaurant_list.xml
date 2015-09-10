@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.coupondunia.RestaurantListActivity" 
+    android:background="@color/gray_opacity_35">
+    <include layout="@layout/toolbar"
+        	 android:id="@+id/tool_bar"/>
+    <TextView
+        android:id="@+id/tvCurrLoc"
+        android:padding="5dp"
+        android:minHeight="50dp"
+        android:elevation="2dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/white"
+        android:drawableLeft="@drawable/ic_curr_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tool_bar"
+        android:tag="statusFetching"
+        android:text="@string/strCurrentLocation" />
+    
+    
+    
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvRestaurantList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_alignParentLeft="true"
+            android:visibility="gone"
+            android:layout_below="@+id/tvCurrLoc">
+    </android.support.v7.widget.RecyclerView>
+
+    <ProgressBar
+        android:id="@+id/pbLoadRestaurantList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/tvErrMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/msgErrStoreListLoad" />
+
+</RelativeLayout>

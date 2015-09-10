@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CouponDunia</string>
+    <string name="activity_offer">Restaurant Offers</string>
+    <string name="msgEnable">Please enable location services</string>
+    <string name="strCurrentLocation"><i>Fetching Current Location</i></string>
+    <string name="msgErrCurrentLocation">Unable to fetch current location</string>
+    <string name="msgEmptyStoreList">No nearby restaurants were found</string>
+    <string name="msgErrStoreListLoad">Unable to load restaurant list.\n Please try again agter sometime</string>
+    <string name="strNoConnection">Internet Unavailable. Please check your internet connectivity and try again.</string>
+
+    <plurals name="offers">
+        <item quantity="one"> %1$s offer </item>
+        <item quantity="other">%1$s offers</item>
+    </plurals>
+
+</resources>
